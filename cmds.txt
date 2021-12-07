@@ -1,0 +1,5 @@
+heroku login
+git clone https://github.com/mahindar5/cors-anywhere.git
+heroku create mahindar-cors-anywhere
+heroku git:remote -a mahindar-cors-anywhere
+git push heroku master
