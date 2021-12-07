@@ -22,7 +22,7 @@ var checkRateLimit = require('./lib/rate-limit')(process.env.CORSANYWHERE_RATELI
 var cors_proxy = require('./lib/cors-anywhere');
 cors_proxy.createServer({
 	originBlacklist: originBlacklist,
-	originWhitelist: [...originWhitelist, 'https://mahindar-1.web.app'],
+	originWhitelist: [...originWhitelist, 'https://mahindar-1.web.app', 'https://secure.splitwise.com'],
 	//   requireHeader: ['origin', 'x-requested-with'],
 	checkRateLimit: checkRateLimit,
 	removeHeaders: [
