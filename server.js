@@ -24,6 +24,7 @@ cors_proxy.createServer({
 	originBlacklist: originBlacklist,
 	originWhitelist: [...originWhitelist,
 		'http://localhost:4200',
+		'http://localhost:8100',
 		'https://split-wiser.web.app',
 		'https://mahindar-1.web.app',
 		'https://secure.splitwise.com'
