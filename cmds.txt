@@ -3,5 +3,4 @@ git clone https://github.com/mahindar5/cors-anywhere.git
 heroku create mahindar-cors-anywhere
 heroku git:remote -a mahindar-cors-anywhere
 git push heroku master
-test
 https://stackoverflow.com/questions/5129598/how-to-link-a-folder-with-an-existing-heroku-app
