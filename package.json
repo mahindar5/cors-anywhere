@@ -28,6 +28,7 @@
     "server.js"
   ],
   "dependencies": {
+    "@opentelemetry/api": "^1.4.0",
     "@opentelemetry/exporter-trace-otlp-http": "^0.35.1",
     "@opentelemetry/sdk-node": "^0.35.1",
     "http-proxy": "1.11.1",
