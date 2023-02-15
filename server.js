@@ -19,7 +19,7 @@ function parseEnvList(env) {
 // Set up rate-limiting to avoid abuse of the public CORS Anywhere server.
 require('./lib/instrument')
 var checkRateLimit = require('./lib/rate-limit')(process.env.CORSANYWHERE_RATELIMIT);
-
+console.log('start');
 var cors_proxy = require('./lib/cors-anywhere');
 cors_proxy.createServer({
 	originBlacklist: originBlacklist,
@@ -54,3 +54,4 @@ cors_proxy.createServer({
 }).listen(port, host, function () {
 	console.log('Running CORS Anywhere on ' + host + ':' + port);
 });
+console.log('end');
